@@ -1,0 +1,316 @@
+/* ////////////////////////////////////////////// STARTS FliP Image CSS code ///////////////////////////////////////// */
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  border: 0px solid red;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #fff;
+  color: black;
+}
+
+/* Style the back side */
+div.flip-box-back 
+{
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+  background-image: url(antoine_doinel.jpg);
+  border-radius: 50%;
+  align-content: end;
+}
+
+div.flip-box-back div
+{
+  border:  0px solid red;
+  margin:  12% 0 0;  
+  opacity: .3;
+  
+}/* ////////////////////////////////////////////// ENDS FliP Image CSS code ///////////////////////////////////////// */
+
+
+/* ///////////////////////////////////////////////   STARTS ZOOM on IMAGE HOOVER ///////////////////////////////////////// */
+
+
+.zoom {
+  padding: 0px;
+  background-color: #fff;
+  transition: transform .2s; 
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.06); /* IE 9 */
+  -webkit-transform: scale(1.06); /* Safari 3-8 */
+  transform: scale(1.06); 
+}
+
+/* ///////////////////////////////////////////////   ENDS ZOOM on IMAGE HOOVER ///////////////////////////////////////// */
+
+
+/* /////////////////////////////////////////////// SHAPES ///////////////////////////////////////// */
+
+/* Triangle top */
+div#triangle-topleft_one 
+ {
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 0;
+      border-top: 20em solid green ; /* #0B4619 */
+      border-right: 250px solid transparent;
+      z-index: -1;
+      opacity: .3;
+    }
+
+    div#triangle-topleft_two 
+ {
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 0;
+      border-top: 30em solid gray;
+      border-right: 350px solid transparent;
+      z-index: -3;
+      opacity: .1;
+    }
+
+/* Triangle bottom */
+div#triangle-bottomright 
+    {      
+      position: inherit;
+      width: 0;
+      height: 0;
+      border-bottom: 10em solid green;
+      border-left: 11em solid transparent;
+      float: right !important;
+      z-index: -1;
+       opacity: .2;
+
+    }
+
+/* /////////////////////////////////////////////// ENDS SHAPES ///////////////////////////////////////// */
+
+
+/* /////////////////////////////////////////////// DECORATIONS / BACKGROUNDS / IMAGES ///////////////////////////////////////// */
+
+
+table#c_e_it_background
+{
+  
+  background: url("/sites/portfolio_3/img/neuron_.png") no-repeat;
+  background-position: right bottom;
+  background-size: 50%;
+  z-index: 10;
+}
+
+/* Bootstrap's override */
+
+/* Bootstrap's Gutter / Space among columns */
+
+.g-4, 
+.gx-4 
+{
+    --bs-gutter-x: 2.5rem !important;
+}
+
+body#svg div.card
+{
+  border: 0 !important;
+}
+
+body#svg .g-4, 
+body#svg .gx-4 
+{
+    --bs-gutter-x: 10rem !important;
+}
+
+
+/* /////////////// CSS Charts Data Set ///////////////// */
+
+div.table-chart-experience
+{
+  border:  0px solid red;
+}
+
+
+div.table-chart-experience h4
+{
+  background-color: #000;
+  color: #fff;
+  font-size: 1.5rem;
+  padding:  .5rem .5rem
+}
+
+table#bar-work-experience 
+{
+  width:  80%;  
+  height: 30vh;
+  max-width: auto;
+  margin: 2rem auto;
+}
+
+
+table#bar-work-experience th
+{
+  border-top: 3px #fff solid;
+  border-bottom: 3px #fff solid;
+  padding-left:  .6em;
+  width: auto;
+  z-index: 1; 
+  /* opacity: .8; 
+  background-color: red; */
+}
+ 
+
+table#bar-work-experience tr#ia th 
+  {
+     background-image: linear-gradient(to right, #fff , #f06464);
+  }
+ 
+ table#bar-work-experience tr#gui_custom th 
+ {
+    background-image: linear-gradient(to right, #fff , #8cdc78);
+
+ }
+
+ table#bar-work-experience tr#content th 
+ {
+    background-image: linear-gradient(to right, #fff , #82beff);
+ }
+
+table#bar-work-experience tr#gui_design th 
+  {
+    background-image: linear-gradient(to right, #fff , #ffb432);
+  }
+
+table#bar-work-experience tr#research th 
+  {
+    background-image: linear-gradient(to right, #fff , #AA966E);
+  }
+
+table#bar-work-experience tr#doc th 
+  {
+    background-image: linear-gradient(to right, #fff , #468e91);
+  }
+
+    /* For Each TD */
+  table#bar-work-experience tr th + td
+  {
+    padding-right: 1em;
+  }
+
+
+  /* [1] Information Architecture */
+  table#bar-work-experience tr#ia th + td
+    {
+      --size: calc( 90 / 100 );
+       --color:  #f06464 ;
+       
+    }
+
+    /* [2] Theming & GUI Customization */
+    table#bar-work-experience tr#gui_custom th + td 
+    {
+      --size: calc( 80 / 100 );
+      --color:  #8cdc78; /* Green */
+    }
+
+    /* [3] Content Management */
+    table#bar-work-experience tr#content th + td
+    {
+      --size: calc( 70 / 100 );
+      --color:  #82beff; /* Blue */
+    }
+
+    /* [4] GUI Design */
+    table#bar-work-experience tr#gui_design th + td 
+    {
+      --size: calc( 50 / 100 );
+       --color:  #ffb432; /* Yellow */
+    }
+
+    /* [5] Research */
+    table#bar-work-experience tr#research th + td
+    {
+      --size: calc( 20 / 100 );
+       --color:  #AA966E; /* Brown */
+    }
+
+    /* [6] Documentation */
+    table#bar-work-experience tr#doc th + td
+    {
+      --size: calc( 40 / 100 );
+       --color:  #468e91; /* Aqua */
+    }
+
+
+
+    /* For each Tooltips */
+    table#bar-work-experience td ul.tooltip
+      {
+        z-index: 10 !important;
+        list-style-type: none;
+      }
+
+
+    /* Tooltips colour */
+  table#bar-work-experience tr#ia ul.tooltip
+    {
+      background-color: #b6321c !important;
+    }
+
+  table#bar-work-experience tr#gui_custom ul.tooltip
+    {
+      background-color: #068b0f !important;
+    }
+    
+  table#bar-work-experience tr#content ul.tooltip
+    {
+      background-color: #0c73ff !important;
+    }
+
+  table#bar-work-experience tr#gui_design ul.tooltip
+    {
+      background-color: #bc8237 !important;
+    }
+
+  table#bar-work-experience tr#research ul.tooltip
+    {
+      background-color: #635535 !important;
+    }
+
+table#bar-work-experience tr#doc ul.tooltip
+    {
+      background-color: #468e91 !important;
+    }

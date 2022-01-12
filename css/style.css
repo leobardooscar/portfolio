@@ -1,0 +1,623 @@
+
+/* ////////////////////////////////////////////////////////////// STARTS IMPORT CSS ///////////////////////////////////////////////// */
+
+		@import url("fx.css");
+
+/* //////////////////////////////////////////////////////////////  ENDS STARTS FONTS  ///////////////////////////////////////////////// */
+
+
+/* //////////////////////////////////////////////////////////////  STARTS FONTS  ///////////////////////////////////////////////// */
+/* FONTS */
+
+@import url("fonts.css");
+
+@font-face {
+  src: url(fonts_awesome/envelope-solid.svg);
+}
+
+
+/* ////////////////////////////////////////////////////////////////////  ENDS FONTS  ///////////////////////////////////////////////// */
+
+/* ///////////////////////////////////////////////////////////////////// STARTS MEDIA QUERIES ///////////////////////////////////////////////////////////// */
+
+/* Media Queries */
+/* EQUAL THAN OR SMALLER > MAX-WIDTH: If the browser window is (N) number or SMALLER <, Then (X) Values  */
+@media only screen and (max-width: 1200px)
+	/* Ocultar fotografía en tamaño completo */
+	{
+
+		/* Wrapper imagen y nombre */
+			div#wrapper_img_name_header
+			{		
+				border:  0px solid red;
+				display: block;	
+				align-items: center; 
+
+			}
+
+		div.image_profile_f_s img,
+		div.flip-box
+			{
+				display: none;
+			}
+		
+		/* Tablas con datos personales */
+		div.personal_info
+			{
+				width: 100%;
+			}
+/* Estilo para lista de correos electrónicos */
+			
+ul#emails 
+{
+	border:  0px solid red;
+	list-style-type: none !important;
+	padding:  0;
+	margin:  0;	
+}		
+
+
+ul#emails li
+{
+	padding:  0;
+	margin:  0;	
+}
+
+/*
+ul#emails li a
+{
+	font-size: 3.5vw;
+}
+*/
+
+
+		/* Imagen para móviles */
+			div#image_profile_mb
+			{
+				border:  0px solid green;		
+				float:  none;
+			}
+
+			div#image_profile_mb img
+			{
+				display: block;	
+				padding: auto;
+				margin: auto ;
+			}
+
+/* Header 1 Nombre */
+			div#name
+			{
+					border:  0px solid red;
+					padding: auto;
+					margin: auto ;
+					align-items: center;
+			}
+
+
+				div#name h1
+				{
+				
+					display: block;
+					padding: auto;
+					margin: auto ;				
+					text-align: center !important;
+				}
+
+/* Responsive image for Mobile Devices */
+div#image_profile_mb
+		{
+			border:  0px solid red;			
+			float:  left;
+			padding: 0;
+			margin:  0 0 0 3%;
+			/* float:  left; */
+
+		} 
+
+			img#m_mb
+				{
+					border: 0px solid green;
+					width: 118px;
+					height: 117px;	
+				}
+	
+
+
+}
+
+/* MIN-WIDTH: EQUAL TO OR GREATER >  */
+@media only screen and (min-width: 1201px)
+	{
+		div#image_profile_mb img#m_mb
+
+			{
+				display: none;
+			}
+
+	}
+
+
+/* Expand Bootstrap columns size to 85% for Small & Medium devices */
+@media only screen and (min-width: 1px) and (max-width: 1200px){
+
+	div.col-6,
+	div.col-7,
+	div.col-8
+	{
+		border: 0px solid red !important;
+		width: 85% !important;
+	}
+}
+
+
+/* Ends Media Queries */
+/* ///////////////////////////////////////////////////////////////////// ENDS MEDIA QUERIES ///////////////////////////////////////////////////////////// */
+
+
+/* /////////////////////////////////////////////////////////////////////  STARTS HTML / BODY  ///////////////////////////////////////////////// */
+
+
+html,
+body
+{
+	margin:  0;
+	padding:  0;
+}
+
+html
+{
+	scroll-behavior: smooth;
+}
+
+/* //////////////////////////////////////////////////////////////  ENDS HTML / BODY  ///////////////////////////////////////////////// */
+
+/* //////////////////////////////////////////////////////////////  STARTS HEADER  ////////////////////////////////////////////////// */
+
+/* Header */
+
+/* NavBar */
+
+	nav
+		{
+			border-top: 35px solid #FF5733;
+			background-color: #e3f2fd;
+			width:  100% !important;
+			max-width:  100%;			
+		}
+
+/* Intro */
+
+
+/* Name initials */
+
+/* Wrapper Name initials */
+
+div.initials
+{
+		border: 0px solid red;
+		padding:  0 auto auto ;
+	margin:   0 auto auto 15px ;
+}
+
+
+dl#name_initials
+	{
+		border: 0px solid gray !important;
+		display: inline-block;
+		padding:  auto;
+		margin: auto 20% auto;
+		float:  right !important;
+		opacity: .5;
+	}
+
+dl#name_initials dl 
+{
+	border:  0px solid blue;
+	padding: 0;
+	margin: 0;
+}
+
+dl#name_initials dl dd 
+	{
+		border-bottom: 1px solid gray;
+		display: inline-block;
+		font-size: 2em; 
+		padding: auto;
+		margin: 0;
+	}
+
+
+/* Header: Contains Image for Moblie Devices & Name  */
+
+	div#wrapper_img_name_header
+		{
+			border: 0px solid blue;
+			display:  flex; 			
+			width:  100%;			
+		}
+
+
+		/* Sections */
+
+		div#sections_wrapper_img_name_header
+		{
+			border: 0px solid red;
+			display:  inline-block; 		
+			width:  50%;				
+			vertical-align: middle;
+			padding:  0 auto;
+			  justify-content: center;
+		}
+
+
+
+/* Name Wrapper */
+div#name
+		{
+			border:  0px solid green;
+			padding:  1.5%;
+			width: 100%;
+			display: flex;
+  			text-align: left ;
+  			justify-content: left ; 	
+
+  	}
+		
+/* Name */
+		div#name h1
+			{
+				width: auto;
+				margin-left:  .1%;
+				text-align: left ;
+				letter-spacing: 0.05em;
+				
+			}
+
+
+/* Íconos redes sociales */
+
+			div#social_networks
+			{
+				border: 0px solid red !important;
+				width: 100%;
+				float:  right;
+			}
+
+		div#social_networks ul
+			{
+				border: 0px solid blue;
+				
+				margin: 33px 15% 0;		
+				float: right;
+				
+				list-style-type: none;		
+			}
+
+			div#social_networks ul li
+			{
+				display: inline-block;
+				padding: 5px;
+				opacity: .7;
+				margin-right: 10px;	
+			}
+		
+			div#social_networks ul a
+			{
+				border:  0px solid red;
+				display:  inline-block;
+				width:  auto;
+				height: auto;
+			}
+
+			div#social_networks ul a img:hover
+			{
+				background-color:  #fff;
+			}
+
+
+
+			div#social_networks ul a img 
+			{
+				border-radius: 5%;
+				background-color:  red;
+			}
+
+
+/* ///////////////////////////////////////////////////////////////////////////STARTS SECTIONS /////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// STARTS FOR ALL SECTIONS ///////////////////////////////////////////////////////////// */
+
+
+
+/* Divisions style */
+	hr:first-child
+		{
+			display:  block;
+			padding: 8px;
+			margin-bottom: 20px;
+			background-color: #cbdff9;
+			/* background-color: #cbdff9; */
+			opacity:  1 !important;
+			/* top: 20px;
+			size: 10px */
+		}
+
+/* Anchors style */
+	a,
+	a:active
+		{
+			text-decoration: none !important ;
+		}
+
+/* Headers secciones: p.e. Social Sciences  */
+
+
+/* PADDING & MARGIN TOP / RIGHT / BOTTOM / LEFT */
+/* CLOCKWISE */
+
+
+div.header_section
+{
+	border: 0px solid red;
+	padding:   auto 0 auto 0;
+	margin:  auto ;
+	display: flex;
+}
+
+h1.header_section
+	{
+		border: 0px solid blue;
+		display:  inline-block;
+		padding:  0 ;
+		margin:  0 ;
+	}
+	
+h1 span
+	{
+		border:  0px solid blue;
+		display:  inline-block;
+		border-bottom: 20px solid salmon;
+	}
+
+/* */
+
+	h3
+		{
+			border: 0px solid red;
+			display: inline-block;
+			width: 90%;
+			margin: 0 0 2% 1%;
+		}
+
+	h3 a.top,
+	h4 a.top
+{
+	border: 0px solid red;
+	display:  inline-block;
+	padding:  0;
+	margin: 0;
+	float:  right;
+	align-items: flex-end;
+}
+
+h3 a.top:hover,
+h4 a.top:hover
+{
+	 background-color: #FF5733;
+	 color: #fff;
+} 
+
+
+h4.gui_ux_gallery
+{
+	border: 0px solid red;
+	display: inline-block;
+	width:  100%;
+}
+
+table.table td 
+{
+	padding-bottom: .9em;
+}
+
+table.table td:first-child 
+{
+	padding-bottom: .9em;
+	vertical-align: middle;
+}
+
+/* Espacio listas en tablas */
+
+
+table.table ul 
+{
+	margin: .5em 0 0;
+}
+
+table.table ul li
+{
+	border: 0px solid red !important;
+	padding: .6em 0 0 ;
+	margin: 0;
+	vertical-align: middle;
+}
+
+body#information_technologies table.table td:first-child, 
+body#social_sciences table.table td:first-child 
+{
+	border-top:  0px solid red;
+	border-bottom:  1px solid red;
+	font-weight: bold ;
+	text-align: center;
+}
+
+
+
+a#top{
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+}
+
+/* ///////////////////////////////////////////////////////////////////// ENDS FOR ALL SECTIONS ///////////////////////////////////////////////////////////// */
+
+/* ///////////////////////////////////////////////////////////////////// STARTS SECTION 1///////////////////////////////////////////////////////////// */
+
+/* Section 1 */
+
+/* Wrapper Personal Info */
+div.personal_info
+{
+	border: 0px red solid !important;
+}
+
+/* Image Full Size for Higher Resolutions  */
+
+		div.image_profile_f_s 
+		{
+			border: 0px solid red !important;	
+			padding:  0;
+			margin:  0;
+			display: flex;
+  		align-items: first baseline;
+  		justify-content: center;
+  		height: 100%;
+  		width: 100%;
+		}
+
+	
+			img.m_f_s
+				{
+					border-radius: 50%;
+					top: 0 !important;
+				}
+
+
+/* Tables */
+table.table
+		{
+			width: 100% !important;
+		} 
+
+
+th.academic_degrees
+		{
+			color: #fff !important	
+		}	
+
+
+
+/* ///////////////////////////////////////////////////////////////////// ENDS SECTION 1///////////////////////////////////////////////////////////// */
+
+/* ///////////////////////////////////////////////////////////////////// STARTS SECTION 2 ////////////////////////////////////////////////////////// */
+
+/* Section 2 */
+
+th.employment_history
+		{
+			color: #fff !important	
+		}	
+/* ///////////////////////////////////////////////////////////////////// ENDS SECTION 2 ///////////////////////////////////////////////////////////// */
+
+
+/* Section 3 */
+
+
+/* Section 4 */
+
+
+/* ///////////////////////////////////////////////////////////////////// STARTS FOOTER ///////////////////////////////////////////////////////////// */
+/* Footer */
+
+footer
+{
+	border-top: 35px solid #142F43; /* #FF5733 */
+	padding: 0 1em ;
+	margin: 100px 0 70px 0px;
+	background-image: linear-gradient(#DDDDE3, #FFF);
+	color:  #000 !important;
+	clear:  both;
+	float:  none;
+	z-index: 1;
+}
+
+footer div.container
+{
+	border-top: 0px solid #FF5733;
+	border-bottom: 3px solid #FF5733;
+	padding: 30px 0 ;
+	margin: 0 auto;
+}
+
+footer ul 
+	{
+		border:  0px solid red;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+
+
+footer ul li
+	{
+		border:  0px solid red;
+	  display: flex;
+		margin:  0 0 10px 0;
+		padding: 0;
+
+	}
+
+footer ul li a
+	{
+		border:  0px solid blue;
+		display: inline-block;		
+		padding:  0 ;
+		margin:  0 ;
+		align-items: first baseline;
+  		justify-content: center;
+		
+	}
+
+
+/* Social Media icons */
+
+footer ul li object
+	{
+		border: 0px solid green;
+		display: inline-block;
+		padding:  0;
+		margin: 0px 15px 0 0 ;
+		opacity: .5;
+	}
+
+/* Copyrights & GitHub */
+
+footer ul li#github 
+{
+	display:  flex;	
+	align-items: center;
+  		justify-content: left;
+}
+
+
+footer ul li#github object 
+{
+		
+		padding: 0;
+		margin:  0 20px 0 0;
+		opacity: .8;
+
+}
+
+footer ul li#github object + span
+{
+	border: 0px solid red;
+	display:  inline-block;
+	align-items: baseline;
+}
+
+
+
+

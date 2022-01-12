@@ -1,0 +1,775 @@
+/* Some annotations about rules and how fluid web typography works 
+
+CLAMP
+In short, clamp takes a preferred value and restricts it between a lower and upper bound:
+
+clamp will always try to return the preferred value, so long as that value lies between the min and max. 
+If the preferred value is smaller than the minimum, clamp will return the minimum value. 
+Conversely, if the preferred value is larger than the maximum, clamp will return the maximum. 
+Hence the function's name—it clamps a value between two endpoints.
+
+
+.element {
+  font-size: clamp(min, preferred, max);
+}
+
+*/
+
+/* Fonts */
+
+:root
+{
+	--font-size-sm: clamp(0.6rem, 0.27vw + 0.55rem, 0.89rem);
+	--font-size-base: clamp(0.75rem, 0.41vw + 0.67rem, 1.19rem);
+	--font-size-md: clamp(0.94rem, 0.6vw + 0.82rem, 1.58rem);
+	--font-size-lg: clamp(1.17rem, 0.87vw + 1rem, 2.11rem);
+	--font-size-xl: clamp(1.46rem, 1.25vw + 1.22rem, 2.81rem);
+	--font-size-xxl: clamp(1.83rem, 1.78vw + 1.48rem, 3.75rem);
+	--font-size-xxxl: clamp(2.29rem, 2.51vw + 1.79rem, 5rem);
+}
+
+
+
+/* Fonts Media queries 
+	320px — 480px: Mobile devices.
+	481px — 768px: iPads, Tablets.
+	769px — 1024px: Small screens, laptops.
+	1025px — 1200px: Desktops, large screens.
+	1201px and more — Extra large screens, TV.
+*/
+
+
+/* MAX-WIDTH: EQUAL THAN OR SMALLER >  If the browser window is (= N) number or SMALLER <, Then (X) Values  */
+
+
+
+
+/* /////////////////////////////////////////////////////////////////// STARTS SMALL DEVICES ///////////////////////////////////////// */
+/*  //////////////////////////// 320px ///////////////////// */
+/* [1] Small Devices: 0 - 359 */
+@media only screen and (min-width: 1px) and (max-width: 359px){
+
+	html,
+	html h3 a.top,
+	html h4 a.top
+	{
+  		font-size: var(--font-size-sm);
+	}	
+
+body#information_technologies div.container-fluid br,
+body#social_sciences div.container-fluid br
+
+	{
+		display: none !important;
+	}
+
+	div#name h1
+	{
+		text-align: center !important;
+	}
+
+	html div#social_networks
+	{
+		width: auto;
+	}
+
+		/* Hide Social Network icons */
+			html div#social_networks ul 
+				{
+  					display:  none;
+				}	
+
+	/* Headers */
+
+	h1.header_section
+		{
+			border-bottom: 5px solid salmon !important ;
+			width:  100%;
+			text-align: center;
+			font-size: 2.2rem;
+		}
+
+	h1.header_section span
+	{
+		border-bottom: 0px solid salmon !important ;
+		display: block;
+		width: 100%;
+		margin-bottom:  5px;
+		border-bottom: 0px solid #fff !important ;
+	}
+
+	div.col-3
+	{
+		width: 0;	
+	}
+	
+
+}
+
+/* [2] Small Devices: 360 - 399 */
+@media only screen and (min-width: 360px) and (max-width: 399px){
+
+	
+	html,
+	html h3 a.top,
+	html h4 a.top
+	{
+  		font-size: var(--font-size-base);
+	}
+
+	body#information_technologies div.container-fluid br,
+body#social_sciences div.container-fluid br
+
+	{
+		display: none !important;
+	}
+
+
+	div#name h1
+	{
+		text-align: center !important;
+	}
+
+	html div#social_networks
+	{
+		width: auto;
+	}
+
+
+		/* Hide Social Network icons */
+			html div#social_networks ul 
+				{
+  					display:  none;
+				}	
+
+
+	/* Headers */
+
+	h1.header_section
+		{
+			border-bottom: 5px solid salmon !important ;
+			width:  100%;
+			text-align: center;
+			font-size: 2.1rem;
+		}
+
+	h1.header_section span
+	{
+		border-bottom: 0px solid salmon !important ;
+		display: block;
+		width: 100%;
+		margin-bottom:  5px;
+		border-bottom: 0px solid #fff !important ;
+	}
+
+	div.col-3
+	{
+		width: 0;	
+	}
+
+
+	}
+
+/* [3] Small Devices: 400 - 479 */
+@media only screen and (min-width: 400px) and (max-width: 479px){
+
+	html,
+	html h3 a.top,
+	html h4 a.top
+	{
+  		font-size: var(--font-size-base);
+	}
+
+body#information_technologies div.container-fluid br,
+body#social_sciences div.container-fluid br
+
+	{
+		display: none !important;
+	}
+
+div#name h1
+	{
+		border:  0px solid red;
+		text-align: center !important;
+		width: 100%;
+	}
+
+	html div#social_networks
+	{
+		width: auto;
+	}
+
+		/* Hide Social Network icons */
+			html div#social_networks ul 
+				{
+  					display:  none;
+				}	
+
+/* Headers */
+
+	h1.header_section
+		{
+			border-bottom: 5px solid salmon !important ;
+			width:  100%;
+			text-align: center;
+			font-size: 2.2rem;
+		}
+
+	h1.header_section span
+	{
+		border-bottom: 0px solid salmon !important ;
+		display: block;
+		width: 100%;
+		margin-bottom:  5px;
+		border-bottom: 0px solid #fff !important ;
+	}
+
+	div.col-3
+	{
+		width: 0;	
+	}
+
+
+	}
+
+
+/* [4] Small Devices: 480 - 599 */
+@media only screen and (min-width: 480px) and (max-width: 599px){
+
+	html,
+	html h3 a.top,
+	html h4 a.top
+	{
+  		font-size: var(--font-size-base);
+	}
+
+body#information_technologies div.container-fluid br,
+body#social_sciences div.container-fluid br
+
+	{
+		display: none !important;
+	}
+
+html div#social_networks
+	{
+		width: auto;
+	}
+
+		/* Hide Social Network icons */
+			html div#social_networks ul 
+				{
+  					display:  none;
+				}	
+
+/* Headers */
+
+	h1.header_section
+		{
+			border-bottom: 5px solid salmon !important ;
+			width:  100%;
+			text-align: center;
+			font-size: 2.2rem;
+		}
+
+	h1.header_section span
+	{
+		border-bottom: 0px solid salmon !important ;
+		display: block;
+		width: 100%;
+		margin-bottom:  5px;
+		border-bottom: 0px solid #fff !important ;
+	}
+
+	div.col-3
+	{
+		width: 0;	
+	}
+
+
+	}
+
+
+
+/* [5] Small Devices: 600 - 719 */
+@media only screen and (min-width: 600px) and (max-width: 719px){
+
+
+	html,
+	html h3 a.top,
+	html h4 a.top
+	{
+  		font-size: var(--font-size-base);
+	}
+
+body#information_technologies div.container-fluid br,
+body#social_sciences div.container-fluid br
+
+	{
+		display: none !important;
+	}
+
+div#name
+		{
+			
+  			text-align: center  !important;
+  			justify-content: center !important ; 	
+
+  		}
+
+	div#name h1
+	{
+		border:  0px solid red;
+		text-align: center !important;
+		width: 100% !important;
+		justify-content: center !important ; 	
+
+	}
+
+html div#social_networks
+	{
+		width: auto;
+	}
+
+		/* Hide Social Network icons */
+			html div#social_networks ul 
+				{
+  					display:  none;
+				}	
+
+/* Headers */
+
+	h1.header_section
+		{
+			border-bottom: 5px solid salmon !important ;
+			width:  100%;
+			text-align: center;
+			font-size: 2.2rem;
+		}
+
+	h1.header_section span
+	{
+		border-bottom: 0px solid salmon !important ;
+		display: block;
+		width: 100%;
+		margin-bottom:  5px;
+		border-bottom: 0px solid #fff !important ;
+	}
+
+	div.col-3
+	{
+		width: 0;	
+	}
+
+}
+
+/* /////////////////////////////////////////////////////////////////// ENDS SMALL DEVICES ///////////////////////////////////////// */
+
+/* /////////////////////////////////////////////////////////////////// STARTS MEDIUM DEVICES ///////////////////////////////////////// */
+
+
+/* [1] Medium Devices: 720 - 839 */
+@media only screen and (min-width: 720px) and (max-width: 839px){
+
+	html,
+	html h3 a.top,
+	html h4 a.top
+	{
+  		font-size: var(--font-size-base);
+	}
+
+body#information_technologies div.container-fluid br,
+body#social_sciences div.container-fluid br
+
+	{
+		display: none !important;
+	}
+
+div#name
+		{
+			
+  			text-align: center  !important;
+  			justify-content: center !important ; 	
+
+  		}
+
+	div#name h1
+	{
+		border:  0px solid red;
+		text-align: center !important;
+		width: 100% !important;
+		justify-content: center !important ; 	
+
+	}
+
+
+	html div#social_networks
+	{
+		width: auto;
+	}
+
+		/* Hide Social Network icons */
+			html div#social_networks ul 
+				{
+  					display:  none;
+				}	
+
+	/* Headers */
+
+	h1.header_section
+		{
+			border-bottom: 5px solid salmon !important ;
+			width:  100%;
+			text-align: center;
+			font-size: 2.2rem;
+		}
+
+	h1.header_section span
+	{
+		border-bottom: 0px solid salmon !important ;
+		display: block;
+		width: 100%;
+		margin-bottom:  5px;
+		border-bottom: 0px solid #fff !important ;
+	}
+
+	div.col-3
+	{
+		width: 0;	
+	}
+
+
+}
+
+
+
+/* [2] Medium Devices: 840 - 959 */
+@media only screen and (min-width: 840px) and (max-width: 959px){
+
+	html,
+	html h3 a.top,
+	html h4 a.top
+	{
+  		font-size: var(--font-size-base);
+	}
+
+	body#information_technologies div.container-fluid br,
+body#social_sciences div.container-fluid br
+
+	{
+		display: none !important;
+	}
+
+	div#name
+		{
+			
+  			text-align: center  !important;
+  			justify-content: center !important ; 	
+
+  		}
+
+	div#name h1
+	{
+		border:  0px solid red;
+		text-align: center !important;
+		width: 100% !important;
+		justify-content: center !important ; 	
+
+	}
+
+	html div#social_networks
+	{
+		width: auto;
+	}
+
+		/* Hide Social Network icons*/
+			html div#social_networks ul 
+				{
+  					display:  none;
+				}	
+
+		/* Headers */
+
+	h1.header_section
+		{
+			border-bottom: 5px solid salmon !important ;
+			width:  100%;
+			text-align: center;
+			font-size: 2.4rem;
+		}
+
+	h1.header_section span
+	{
+		border-bottom: 0px solid salmon !important ;
+		display: block;
+		width: 100%;
+		margin-bottom:  5px;
+		border-bottom: 0px solid #fff !important ;
+	}
+
+	div.col-3
+	{
+		width: 0;	
+	}
+
+}
+
+
+
+/* [3] Medium Devices: 960 - 1023 */
+@media only screen and (min-width: 960px) and (max-width: 1023px){
+
+	html,
+	html h3 a.top,
+	html h4 a.top
+	{
+  		font-size: var(--font-size-base);
+	}
+
+body#information_technologies div.container-fluid br,
+body#social_sciences div.container-fluid br
+
+	{
+		display: none !important;
+	}
+
+	div#name h1
+	{
+		border:  0px solid red;
+		text-align: center !important;
+		width: 100% !important;
+		justify-content: center !important ; 	
+
+	}
+
+html div#social_networks
+	{
+		width: auto;
+	}
+
+		/* Hide Social Network icons*/
+			html div#social_networks ul 
+				{
+  					display:  none;
+  					visibility: hidden;
+
+				}	
+
+/* Headers */
+
+	h1.header_section
+		{
+			border-bottom: 5px solid salmon !important ;
+			width:  100%;
+			text-align: center;
+			font-size: 2.5rem;
+		}
+
+	h1.header_section span
+	{
+		border-bottom: 0px solid salmon !important ;
+		display: block;
+		width: 100%;
+		margin-bottom:  5px;
+		border-bottom: 0px solid #fff !important ;
+	}
+
+	div.col-3
+	{
+		width: 0;	
+	}
+
+}
+
+
+
+
+/* [4] Medium Devices: 1024 - 1279 */
+@media only screen and (min-width: 1024px) and (max-width: 1279px){
+
+html,
+	html h3 a.top,
+	html h4 a.top
+	{
+  		font-size: var(--font-size-base);
+	}
+
+body#information_technologies div.container-fluid br,
+body#social_sciences div.container-fluid br
+
+	{
+		display: none !important;
+	}
+
+	div#name h1
+	{
+		border:  0px solid red;
+		text-align: left !important;
+		width: 100% !important;
+		justify-content: left !important ; 	
+
+	}
+
+html div#social_networks
+	{
+		border:  0px solid red !important;
+		margin:  0 !important;
+		padding:  0 !important;
+		width: 50%;
+		vertical-align: middle;
+	}
+
+html div#social_networks ul li:last-child
+	{
+		display: none;
+	}
+
+	/* Headers */
+
+	h1.header_section
+		{
+			border:  0px solid red !important;
+			width:  100%;
+			text-align: center;
+		}
+
+	h1.header_section span
+	{
+		display: block;
+		width: 100%;
+		border-bottom: 5px solid salmon !important ;
+	}
+
+	div.col-3
+	{
+		width: 0;	
+	}
+		
+
+}
+
+
+/* [4] Medium Devices: 1024 - 1279 */
+@media only screen and (min-width: 1201px) {
+
+/* Hide Social Network icons*/
+			html div#social_networks ul 
+				{
+  					display: inline;
+  					visibility: inherit;
+				}	
+
+}
+
+
+
+
+/* /////////////////////////////////////////////////////////////////// ENDS MEDIUM DEVICES ///////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////// STARTS LARGE DEVICES ///////////////////////////////////////// */
+
+/* [1] Large Devices: 1280 - 1439 */
+@media only screen and (min-width: 1280px) and (max-width: 1439px){
+
+html,
+	html h3 a.top,
+	html h4 a.top
+	{
+  		font-size: var(--font-size-base);
+	}
+
+body#information_technologies div.container-fluid br,
+body#social_sciences div.container-fluid br
+
+	{
+		display: none !important;
+	}
+
+	html div#social_networks
+	{
+		width: 70%;
+	}
+
+/* Headers */
+
+	h1.header_section
+		{
+			border:  0px solid red !important;
+			width:  100%;
+			text-align: center;
+		}
+
+	h1.header_section span
+	{
+		display: block;
+		width: 100%;
+		border-bottom: 5px solid salmon !important ;
+	}
+
+	div.col-3
+	{
+		width: 0;	
+	}
+		
+
+
+}
+
+/* [2] Large Devices: 1440 - 1599 */
+@media only screen and (min-width: 1440px) and (max-width: 1599px){
+
+html,
+	html h3 a.top,
+	html h4 a.top
+	{
+  		font-size: var(--font-size-base);
+	}
+
+	html div#social_networks
+	{
+		width: 80%;
+	}
+}
+
+
+/* [3] Large Devices: 1600 - 1919 */
+@media only screen and (min-width: 1600px) and (max-width: 1919px){
+
+
+html,
+	html h3 a.top,
+	html h4 a.top
+	{
+  		font-size: var(--font-size-base);
+	}
+
+	html div#social_networks
+	{
+		width: 100%;
+	}
+
+
+}
+
+/* [4] Large Devices: 1920 - 20148 */
+@media only screen and (min-width: 1920px) and (max-width: 2560px){
+
+html,
+	html h3 a.top,
+	html h4 a.top
+	{
+  		font-size: var(--font-size-base);
+	}
+
+	html div#social_networks
+	{
+		width: 100%;
+	}
+
+}
+
+
+
+
+
+
+
+
