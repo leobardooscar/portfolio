@@ -345,9 +345,41 @@ div#name
 	div.skills_competences ul
 	{
 		font-size: 1.25rem;
-		font-weight: 500;
-		
+		font-weight: 500;	
 	}
+
+	div.skills_competences ul li
+	{
+		padding-bottom: .8rem;
+	}
+
+	/* Outcomes */
+div.outcomes button
+{
+	font-size: 1.5rem ;
+	background-color: #e7f1ff; /* #0d6efd!important; */
+	color: #000;
+}
+
+
+   
+div.outcomes ul li	
+{	
+	font-size: 1.25rem ;
+}
+
+/* button.accordion-button
+{
+	color: #fff !important;
+	background-color: red ;
+} */
+
+
+button.accordion-button:not(.collapsed)
+{
+	color: #fff;
+	background-color: #0c63e4  !important;
+}
 
 /* ///////////////////////////////////////////////////////////////////////////STARTS SECTIONS /////////////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////////// STARTS FOR ALL SECTIONS ///////////////////////////////////////////////////////////// */
@@ -527,7 +559,8 @@ table.table
 		} 
 
 
-th.academic_degrees
+th.academic_degrees,
+div.skills_competences table thead th
 		{
 			color: #fff !important	
 		}	
