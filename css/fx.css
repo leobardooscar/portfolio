@@ -125,14 +125,6 @@ div#triangle-bottomright
 /* /////////////////////////////////////////////// DECORATIONS / BACKGROUNDS / IMAGES ///////////////////////////////////////// */
 
 
-table#c_e_it_background
-{
-  
-  background: url("/sites/portfolio_3/img/neuron_.png") no-repeat;
-  background-position: right bottom;
-  background-size: 50%;
-  z-index: 10;
-}
 
 /* Bootstrap's override */
 
@@ -314,3 +306,21 @@ table#bar-work-experience tr#doc ul.tooltip
     {
       background-color: #468e91 !important;
     }
+
+/* Accordion */
+
+div.accordion-item:hover
+{
+  background-color: #f3f3f3 !important;
+  z-index: 10
+}
+
+
+/* SVG Arrow down v */
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(down_arrow.svg) !important;
+    transform: rotate(-180deg);
+}
+
+
