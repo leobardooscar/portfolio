@@ -140,6 +140,8 @@ div#image_profile_mb
 
 
 /* Expand Bootstrap columns size to 85% for Small & Medium devices */
+/* CHANGED TO:  Expand Bootstrap columns size to 100% for Small & Medium devices */
+
 @media only screen and (min-width: 1px) and (max-width: 1200px){
 
 	div.col-6,
@@ -147,7 +149,7 @@ div#image_profile_mb
 	div.col-8
 	{
 		border: 0px solid red !important;
-		width: 85% !important;
+		width: 100% !important;
 	}
 }
 
