@@ -83,6 +83,7 @@ ul#emails li a
 				display: block;	
 				padding: auto;
 				margin: auto ;
+				border-radius: 50%;
 			}
 
 /* Header 1 Nombre */
@@ -169,14 +170,6 @@ html
 {
 	scroll-behavior: smooth;
 }
-
-body.en span.en,
-body.es span.es
-{
-	background-color: green;
-	color:  #fff;
-}
-
 
 /* //////////////////////////////////////////////////////////////  ENDS HTML / BODY  ///////////////////////////////////////////////// */
 
@@ -331,55 +324,6 @@ div#name
 				background-color:  red;
 			}
 
-
-			/* Technical Skills & Competences headers */
-
-			div.skills_competences h4  
-			{
-    background-color: #000;
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 0.5rem 0.5rem;
-}
-
-	div.skills_competences ul
-	{
-		font-size: 1.25rem;
-		font-weight: 500;	
-	}
-
-	div.skills_competences ul li
-	{
-		padding-bottom: .8rem;
-	}
-
-	/* Outcomes */
-div.outcomes button
-{
-	font-size: 1.5rem ;
-	background-color: #e7f1ff; /* #0d6efd!important; */
-	color: #000;
-}
-
-
-   
-div.outcomes ul li	
-{	
-	font-size: 1.25rem ;
-}
-
-/* button.accordion-button
-{
-	color: #fff !important;
-	background-color: red ;
-} */
-
-
-button.accordion-button:not(.collapsed)
-{
-	color: #fff;
-	background-color: #0c63e4  !important;
-}
 
 /* ///////////////////////////////////////////////////////////////////////////STARTS SECTIONS /////////////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////////// STARTS FOR ALL SECTIONS ///////////////////////////////////////////////////////////// */
@@ -559,8 +503,7 @@ table.table
 		} 
 
 
-th.academic_degrees,
-div.skills_competences table thead th
+th.academic_degrees
 		{
 			color: #fff !important	
 		}	
