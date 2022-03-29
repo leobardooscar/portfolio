@@ -119,7 +119,8 @@ div#image_profile_mb
 				{
 					border: 0px solid green;
 					width: 118px;
-					height: 117px;	
+					height: 117px;
+					border-radius: 50%;
 				}
 	
 
