@@ -138,6 +138,7 @@ div#image_profile_mb
 
 	}
 
+/* On this page menu / Home  */
 
 	/* MIN-WIDTH: EQUAL TO OR GREATER >  */
 @media only screen and (min-width: 992px)
@@ -691,5 +692,10 @@ footer ul li#github object + span
 }
 
 
-
-
+/* Logo X former Twitter */
+li.x_logo > object
+{	
+	border: solid 0px red;
+	margin: 7px 10px 0 0 ;	
+	background-color: gray
+}
