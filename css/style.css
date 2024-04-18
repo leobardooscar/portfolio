@@ -139,6 +139,17 @@ div#image_profile_mb
 	}
 
 
+	/* MIN-WIDTH: EQUAL TO OR GREATER >  */
+@media only screen and (min-width: 992px)
+	{
+		div.hide_page_nav
+
+			{
+				display: none !important;
+			}
+
+	}
+
 /* Expand Bootstrap columns size to 85% for Small & Medium devices */
 @media only screen and (min-width: 1px) and (max-width: 1200px){
 
