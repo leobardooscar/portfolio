@@ -88,10 +88,10 @@ div#triangle-topleft_one
       width: 0;
       height: 0;
       top: 0;
-      border-top: 20em solid green ; /* #0B4619 */
+      border-top: 20em solid  #68595e; /* #0B4619 */
       border-right: 250px solid transparent;
       z-index: -1;
-      opacity: .3;
+      opacity: .46;
     }
 
     div#triangle-topleft_two 
@@ -100,10 +100,10 @@ div#triangle-topleft_one
       width: 0;
       height: 0;
       top: 0;
-      border-top: 30em solid gray;
+      border-top: 30em solid #7ec8e3;
       border-right: 350px solid transparent;
       z-index: -3;
-      opacity: .1;
+      opacity: .2;
     }
 
 /* Triangle bottom */

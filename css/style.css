@@ -188,7 +188,7 @@ html
 body.en span.en,
 body.es span.es
 {
-	background-color: green;
+	background-color:#0d86d4;
 	color:  #fff;
 }
 
@@ -203,13 +203,26 @@ body.es span.es
 
 	nav
 		{
-			border-top: 35px solid #FF5733;
+			border-top: 35px solid #023e8a;  /* #FF5733 */
 			background-color: #e3f2fd;
 			width:  100% !important;
 			max-width:  100%;			
 		}
 
-/* Intro */
+/* NavBar left Home page menu */
+
+		nav#on_this_page button
+		{
+			border: 0;
+			background-color: #de362d;
+		}
+
+		nav#on_this_page button: :hover
+		{
+
+		}
+
+		/* Intro */
 
 
 /* Name initials */
@@ -572,7 +585,19 @@ table.table
 		{
 			width: 100% !important;
 		} 
+/* Overwrite Bootstrap table colors */
+		thead.bg-success
+		{
+			background-color: #023e8a !important;
+			color: #fff !important;	
+		}
 
+		thead.table-dark th,
+		div.table-chart-experience h4
+		
+		{
+			background-color: #344e55 !important; /*  #00527E */
+		}
 
 th.academic_degrees,
 div.skills_competences table thead th
