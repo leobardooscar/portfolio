@@ -211,10 +211,20 @@ body.es span.es
 
 /* NavBar left Home page menu */
 
-		nav#on_this_page button
+div#on_this_page
+{
+	margin: -10px 0 0 0;
+	position: fixed;
+	z-index: 100;
+}
+
+			
+
+		div#on_this_page button
 		{
 			border: 0;
 			background-color: #de362d;
+			
 		}
 
 		nav#on_this_page button: :hover
