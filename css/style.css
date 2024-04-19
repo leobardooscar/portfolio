@@ -751,3 +751,21 @@ li.x_logo > object
 	margin: 7px 10px 0 0 ;	
 	background-color: gray
 }
+
+/* Logo SVG Repo */
+a#svg_repo 
+{	
+	border: solid 1px red;
+	margin: 0;
+	padding:  0x;
+	display: block
+}
+
+a#svg_repo > object
+{
+	margin: 0 ;
+	padding:  0;
+	display: block
+}
+
+
