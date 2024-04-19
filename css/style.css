@@ -46,6 +46,9 @@
 			{
 				width: 100%;
 			}
+
+
+
 /* Estilo para lista de correos electrónicos */
 			
 ul#emails 
@@ -123,9 +126,19 @@ div#image_profile_mb
 					border-radius: 50%;
 				}
 	
-
-
 }
+
+/* On this page menu FULL RESOLUTION  */
+@media only screen and (max-width: 991px)
+	{
+		div#on_this_page
+
+			{
+				display: none !important;
+			}
+
+	}
+
 
 /* MIN-WIDTH: EQUAL TO OR GREATER >  */
 @media only screen and (min-width: 1201px)
@@ -138,18 +151,6 @@ div#image_profile_mb
 
 	}
 
-/* On this page menu / Home  */
-
-	/* MIN-WIDTH: EQUAL TO OR GREATER >  */
-@media only screen and (min-width: 992px)
-	{
-		div.hide_page_nav
-
-			{
-				display: none !important;
-			}
-
-	}
 
 /* Expand Bootstrap columns size to 85% for Small & Medium devices */
 @media only screen and (min-width: 1px) and (max-width: 1200px){
@@ -165,6 +166,21 @@ div#image_profile_mb
 	}
 }
 
+
+
+/* On this page menu under hamburguer menu */
+
+	/* MIN-WIDTH: EQUAL TO OR GREATER >  */
+	
+	@media only screen and  (min-width: 992px)
+	{
+		div#hidden_page_nav
+
+			{
+				display: none !important;
+			}
+
+	}
 
 /* Ends Media Queries */
 /* ///////////////////////////////////////////////////////////////////// ENDS MEDIA QUERIES ///////////////////////////////////////////////////////////// */
@@ -215,12 +231,13 @@ div#on_this_page
 {
 	margin: -10px 0 0 0;
 	position: fixed;
-	z-index: 100;
+	z-index: 10;
 }
 
 			
 
-		div#on_this_page button
+		div#on_this_page button,
+		div#hidden_page_nav button
 		{
 			border: 0;
 			background-color: #de362d;
@@ -232,7 +249,7 @@ div#on_this_page
 
 		}
 
-		/* Intro */
+/* Intro */
 
 
 /* Name initials */
