@@ -1,7 +1,7 @@
 
 /* ////////////////////////////////////////////////////////////// STARTS IMPORT CSS ///////////////////////////////////////////////// */
 
-		@import url("fx.css");
+@import url("fx.css");
 
 /* //////////////////////////////////////////////////////////////  ENDS STARTS FONTS  ///////////////////////////////////////////////// */
 
@@ -224,6 +224,50 @@ body.es span.es
 			width:  100% !important;
 			max-width:  100%;			
 		}
+/* Home */
+
+li#home a.active
+{
+	border-radius: 5px;
+	background-color: #ff9800; /*#FED800;*/
+	margin: 10px 40px 0 0;
+	padding: 0 7px 6px 7px;
+}
+
+li#home a
+{
+	border-radius: 5px;
+	margin: 10px 25px 0 0;
+	padding: 0 7px 6px 7px;
+}
+
+
+li#home a:hover
+{
+	background-color: #ff9800;
+}
+
+/* Nav bar */
+
+body div.navbar-collapse ul.navbar-nav li + li.dropdown a:hover,
+body div.navbar-collapse ul.navbar-nav li + li + li.nav-item a:hover
+
+{
+	background-color: #e6f4f9; /*#C3EBFA */
+}
+
+body div.navbar-collapse ul.navbar-nav li + li.dropdown:last-child a:hover
+{
+	background: none  ; 
+}
+
+
+body.continuing_education nav ul li.dropdown a.active,
+body.projects nav ul li.dropdown a.active
+{
+	border-radius: 5px;
+	background-color: #C3EBFA;
+}
 
 /* NavBar left Home page menu */
 
@@ -244,10 +288,7 @@ div#on_this_page
 			
 		}
 
-		nav#on_this_page button: :hover
-		{
-
-		}
+	
 
 /* Intro */
 
@@ -712,8 +753,8 @@ footer ul li object
 	{
 		border: 0px solid green;
 		display: inline-block;
-		padding:  0;
-		margin: 0px 15px 0 0 ;
+		margin: 4px 15px 0 0 ;
+		padding:  0;		
 		opacity: .5;
 	}
 
