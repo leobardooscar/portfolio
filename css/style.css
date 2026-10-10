@@ -168,6 +168,18 @@ div#image_profile_mb
 
 
 
+
+/* Hide Lexicography */
+@media only screen and (max-width: 1080px) {
+		
+    li#lexicography
+
+			{
+				display: none;
+			}
+	}
+
+
 /* On this page menu under hamburguer menu */
 
 	/* MIN-WIDTH: EQUAL TO OR GREATER >  */
@@ -175,12 +187,13 @@ div#image_profile_mb
 	@media only screen and  (min-width: 992px)
 	{
 		div#hidden_page_nav
-
+    
 			{
 				display: none !important;
 			}
-
 	}
+	
+	
 
 /* Ends Media Queries */
 /* ///////////////////////////////////////////////////////////////////// ENDS MEDIA QUERIES ///////////////////////////////////////////////////////////// */

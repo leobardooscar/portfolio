@@ -55,69 +55,84 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item" id="home">
-          <a class="nav-link" aria-current="page" href="/portfolio/"><img src="css/fonts_awesome/house-chimney-solid.svg" width="20" height="20" alt=""/> </a>
-        </li>
-        <!-- CONTINUING EDUCATION -->
+    
+    <!-- Starts Main Navbar -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item" id="home">
+            <a class="nav-link active" aria-current="page" href="/portfolio/"><img src="css/fonts_awesome/house-chimney-solid.svg" width="20" height="20" alt=""/> </a>
+          </li>
+          <!-- CONTINUING EDUCATION -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Continuing Education
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="c_e_i_t.html">Information Technology</a></li>
+              <li><a class="dropdown-item" href="c_e_s_s.html">Social Sciences</a></li>
+            
+            </ul>
+          </li>
+         
+        <!-- PROJECT GALLERY -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Continuing Education
+            Web Gallery
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="c_e_i_t.html">Information Technology</a></li>
-            <li><a class="dropdown-item" href="c_e_s_s.html">Social Sciences</a></li>
-          
+            <li><a class="dropdown-item" href="geomatics.html">Geomatics </a></li>
+            <li><a class="dropdown-item" href="gui_ux.html">GUI & UX Design </a></li>
+              <li><a class="dropdown-item" href="svg.html">SVG GUI Design </a></li>
           </ul>
         </li>
         
+        <!-- TECHNICAL DOCUMENTATION -->
+        
+         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Documentation
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="doc_product_packaging.html">Packing process </a></li>
+              <li><a class="dropdown-item" href="doc_machinery_user_interface.html">User Manual</a></li>         
+            </ul>
+          </li>
+        
+        	 <!-- PHOTOGRAPHY -->  
+          <li class="nav-item dropdown">
+  
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Photography
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              
+              <li><a class="dropdown-item" href="https://leobardooscar.github.io/clouds/">Clouds collection</a></li>
+              <li><a class="dropdown-item" href="https://www.flickr.com/people/loao/">My work on Flickr</a></li>
+              
+            </ul>
+        </li>
+        
         <!-- LEXICOGRAPHY -->  
-        <li class="nav-item ">
-          <a class="nav-link" href="https://www.lexonomy.eu/#english_spanish" tabindex="-1" aria-disabled="false" target="_blank" title="Flickr photo gallery">Lexicography</a>
-        </li>
-      
-        <!-- PHOTOGRAPHY -->  
-        <li class="nav-item dropdown">
-
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Photography
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            
-            <li><a class="dropdown-item" href="https://leobardooscar.github.io/clouds/">Clouds collection</a></li>
-            <li><a class="dropdown-item" href="https://www.flickr.com/people/loao/">My work on Flickr</a></li>
-            
-          </ul>
-      </li>
-
-      <!-- PROJECT GALLERY -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Project gallery
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="geomatics.html">Geomatics </a></li>
-          <li><a class="dropdown-item" href="gui_ux.html">GUI & UX Design </a></li>
-            <li><a class="dropdown-item" href="svg.html">SVG GUI Design </a></li>
+          <li class="nav-item" id="lexicography">
+            <a class="nav-link"  href="https://www.lexonomy.eu/#english_spanish" tabindex="-1" aria-disabled="false" target="_blank" title="Flickr photo gallery">Lexicography</a>
+          </li>
+        
+        <!-- LANGUAGE -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="css/fonts_awesome/globe-americas-solid.svg" width="16" height="16" alt="" />  <span class="en">EN</span>/<span class="es">ES</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="https://leobardooscar.github.io/portfolio/">English</a></li>
+              <li><a class="dropdown-item" href="https://leobardooscar.gitlab.io/portafolios/">Español</a></li>
+            </ul>
+          </li>
         </ul>
-      </li>
-      
-      <!-- LANGUAGE -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="css/fonts_awesome/globe-americas-solid.svg" width="16" height="16" alt="" />  <span class="en">EN</span>/<span class="es">ES</span>
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="https://leobardooscar.github.io/portfolio/">English</a></li>
-            <li><a class="dropdown-item" href="https://leobardooscar.gitlab.io/portafolios/">Español</a></li>
-          </ul>
-        </li>
-      </ul>
+      </div>
     </div>
-  </div>
-</nav>
-<!-- Ends Navbar -->
+  </nav>
+  <!-- Ends Navbar -->
 
 <br />
 <!-- STARTS Firma / Header / Redes -->
@@ -148,14 +163,15 @@
 <div class="col col-4">
     <div id="social_networks">
         <ul>
-           <li><a href="https://twitter.com/joshua_w_d" title="X: @joshua_wd">
-              <img src="css/fonts_awesome/x_former_twitter-brands.svg" width="36" height="36" alt="" />  </a> </li>
-            <li><a href="https://www.instagram.com/leobardo_o_a_o/" title="Instagram"><img src="css/fonts_awesome/instagram-svgrepo-com.svg" width="36" height="36" alt="" /> </a></li> 
-           <li><a href="https://leobardooscar.myportfolio.com" title="Behance"><img src="css/fonts_awesome/behance-square-brands.svg" width="38" height="38" alt="" /> </a></li>
-            <!-- https://www.behance.net/leobardooscar -->
-           <li><a href="https://open.spotify.com/user/leobardo_oscar" title="Spotify"><img src="css/fonts_awesome/spotify-brands.svg" width="36" height="36" alt="" /></a></li>
-           <li><a href="https://www.flickr.com/people/loao/" title="Flickr"><img src="css/fonts_awesome/flickr-rounded-border-svgrepo-com.svg" width="37" height="37" alt="" /></a></li>
-       </ul> 
+                          <li><a href="https://twitter.com/joshua_w_d" title="X: @joshua_wd"><img src="css/fonts_awesome/x_former_twitter-brands.svg" width="36" height="36" alt="" />  </a> </li>
+                          <li><a href="https://www.linktr.ee/leobardooscar" title="Linktr.ee"><img src="css/fonts_awesome/linktree.svg" width="37" height="37" alt="" /></a></li> 
+                          <li><a href="https://www.instagram.com/leobardo_o_a_o/" title="Instagram"><img src="css/fonts_awesome/instagram-svgrepo-com.svg" width="36" height="36" alt="" /> </a></li> 
+                          <li><a href="https://leobardooscar.myportfolio.com/" title="Behance"><img src="css/fonts_awesome/behance-square-brands.svg" width="38" height="38" alt="" /> </a></li>
+                          <li><a href="https://www.flickr.com/people/loao/" title="Flickr"><img src="css/fonts_awesome/flickr-rounded-border-svgrepo-com.svg" width="37" height="37" alt="" /></a></li>
+                          <li><a href="https://open.spotify.com/user/leobardo_oscar" title="Spotify"><img src="css/fonts_awesome/spotify-brands.svg" width="36" height="36" alt="" /></a></li>                          
+                          
+                          <!-- https://www.behance.net/leobardooscar -->
+                      </ul> 
      </div> 
     </div>
   </div>
